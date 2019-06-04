@@ -9,3 +9,5 @@
 - [ ] Versionner votre dossier et pusher le sur github (dans un nouveau repo)
 - [ ] Répondre aux questions en bas de fichier .JS et affichez les resultats dans le terminal ou dans la console du navigateur.
 - [ ] Lorsque vous avez finis, pusher ! ;)
+
+![airbus_a330_large_croped](https://user-images.githubusercontent.com/16645022/58883993-cd32d380-86df-11e9-9a18-787608035e58.jpg)

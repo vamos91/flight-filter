@@ -67,7 +67,7 @@ const vols = [{
 
 //Appliquer une reduc de 20% sur chaque vol organiser après 2019 et les afficher
 
-//Afficher tous les vols pour Paris organisés entre le "06/02/2019" et le "09/06/2019".
+//Afficher tous les vols pour Paris prévus entre le "06/02/2019" et le "09/06/2019".
 
 //Afficher tous les vols qui voyagent avec 'Lufthansa' dont le prix est inférieur à 900 euros
 //et dont la durée du trajet est inférieur à 15 heures

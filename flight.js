@@ -74,3 +74,85 @@ const vols = [{
 
 
 
+
+const tasse1 = {
+  nom: 'tasse provencale',
+  taille: 'XL',
+  couleur: 'bleu',
+  poignet: 'oui',
+  marque: 'maison du monde'
+}
+
+const tasse2 = {
+  nom: 'tasse catalane',
+  taille: 'L',
+  couleur: 'rouge',
+  poignet: 'non',
+  marque: 'conforama'
+}
+
+const tasse3 = {
+  nom: 'tasse chtit',
+  taille: 'XL',
+  couleur: 'bleu',
+  poignet: 'oui',
+  marque: 'conforama'
+}
+
+const tasses = [
+{
+  nom: 'tasse provencale',
+  taille: 'XL',
+  couleur: 'bleu',
+  poignet: 'oui',
+  marque: 'maison du monde'
+},
+{
+  nom: 'tasse catalane',
+  taille: 'L',
+  couleur: 'rouge',
+  poignet: 'non',
+  marque: 'conforama'
+},
+{
+  nom: 'tasse chtit',
+  taille: 'XL',
+  couleur: 'bleu',
+  poignet: 'oui',
+  marque: 'conforama'
+}
+];
+
+
+
+
+
+let i = 0;
+tasses.forEach((tasse) => {
+  if(tasse.marque === 'conforama'){
+    console.log(tasse.nom);
+    i++;
+  };
+});
+
+console.log(`il y a ${i} résultats à votre recherche`);
+
+
+
+//Allez voir ce qu'est un JSON !
+//https://developer.mozilla.org/fr/docs/Learn/JavaScript/Objects/JSON
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

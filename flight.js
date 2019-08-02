@@ -67,75 +67,31 @@ const vols = [{
 
 //Appliquer une reduc de 20% sur chaque vol organiser après 2019 et les afficher
 
+//Fonction permettant de comparer deux date et renvoie 'true' si date1 est supérieur à date2
+const date1SupDate2 = (date1, date2) => {
+  // L'objet 'Date' permet de pouvoir comparer deux dates.
+  date1 = new Date(date1);
+  date2 = new Date(date2);
+  if(date1 > date2){
+    return true;
+  }else{
+    return false;
+  };
+};
+
+vols.forEach((vol) => {
+  if(date1SupDate2(vol.date_depart, '01/01/2020')){
+    //si la comaraison renvoie 'true' on affiche les destinations
+    console.log(`Le vol à destination de ${vol.destination} est désormais à ${vol.prix * 0.8} euro au lieu de ${vol.prix} euros`);
+  };
+});
+
 //Afficher tous les vols pour Paris prévus entre le "06/02/2019" et le "09/06/2019".
 
 //Afficher tous les vols qui voyagent avec 'Lufthansa' dont le prix est inférieur à 900 euros
 //et dont la durée du trajet est inférieur à 15 heures
 
 
-
-
-const tasse1 = {
-  nom: 'tasse provencale',
-  taille: 'XL',
-  couleur: 'bleu',
-  poignet: 'oui',
-  marque: 'maison du monde'
-}
-
-const tasse2 = {
-  nom: 'tasse catalane',
-  taille: 'L',
-  couleur: 'rouge',
-  poignet: 'non',
-  marque: 'conforama'
-}
-
-const tasse3 = {
-  nom: 'tasse chtit',
-  taille: 'XL',
-  couleur: 'bleu',
-  poignet: 'oui',
-  marque: 'conforama'
-}
-
-const tasses = [
-{
-  nom: 'tasse provencale',
-  taille: 'XL',
-  couleur: 'bleu',
-  poignet: 'oui',
-  marque: 'maison du monde'
-},
-{
-  nom: 'tasse catalane',
-  taille: 'L',
-  couleur: 'rouge',
-  poignet: 'non',
-  marque: 'conforama'
-},
-{
-  nom: 'tasse chtit',
-  taille: 'XL',
-  couleur: 'bleu',
-  poignet: 'oui',
-  marque: 'conforama'
-}
-];
-
-
-
-
-
-let i = 0;
-tasses.forEach((tasse) => {
-  if(tasse.marque === 'conforama'){
-    console.log(tasse.nom);
-    i++;
-  };
-});
-
-console.log(`il y a ${i} résultats à votre recherche`);
 
 
 
@@ -145,9 +101,59 @@ console.log(`il y a ${i} résultats à votre recherche`);
 
 
 
+// const tasse1 = {
+//   poignet: 'oui',
+//   couleur: 'bleu',
+//   taille: '10cm',
+//   marque: 'maison du monde'
+// }
+
+// const tasse2 = {
+//   poignet: 'oui',
+//   couleur: 'jaune',
+//   taille: '10cm',
+//   marque: 'conforama'
+// }
+
+// const tasse3 = {
+//   poignet: 'oui',
+//   couleur: 'jaune',
+//   taille: '10cm',
+//   marque: 'maison du monde'
+// }
+
+//const tasses = [tasse1, tasse2, tasse3];
+
+//format de données JSON
 
 
+const tasses = [
+{
+  poignet: 'oui',
+  couleur: 'bleu',
+  taille: '10cm',
+  marque: 'maison du monde'
+},
+{
+  poignet: 'oui',
+  couleur: 'jaune',
+  taille: '10cm',
+  marque: 'conforama'
+},
+{
+  poignet: 'oui',
+  couleur: 'jaune',
+  taille: '10cm',
+  marque: 'maison du monde'
+}
+]
 
+
+// tasses.forEach((tasse) => {
+//   if(tasse.marque === 'maison du monde'){
+//     console.log(tasse)
+//   }
+// });
 
 
 

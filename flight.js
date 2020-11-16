@@ -62,35 +62,10 @@ const vols = [{
 //Afficher tous les vols qui voyagent avec 'Lufthansa' dont le prix est inférieur à 900 euros
 //et dont la durée du trajet est inférieur à 15 heures
 
-//Appliquer une reduc de 20% sur chaque vol organiser après 2019 et les afficher
-
-//Afficher tous les vols pour Paris prévus entre le "06/02/2019" et le "09/06/2019".
-
-//----------------------------------------------------------------------------------
+//Appliquer une reduc de 20% sur chaque à destination de Tokyo.
 
 
 
-//Afficher tous les vols à partir de la date d'aujourd'hui
 
-//Un petit coup de main...
-//Il faut récupèrer la date du jour avec l'objet 'date' (new Date()) fournis par Javascript.
-
-//La fonction suivante permet de comparer deux dates et renvoie 'true' si date1 est supérieur à date2
-//Pour comparer deux, celles-ci doivent avoir le même format.
-const date1SupDate2 = (date1, date2) => {
-  startDate = new Date(date1);
-  endDate = new Date(date2);
-  if (startDate > endDate) {
-    return true;
-  } else {
-    return false;
-  };
-};
-
-
-console.log(date1SupDate2("12/13/2020", "12/12/2020"));
-
-
-
-//Allez voir ce qu'est un JSON !
+//Allez voir ce qu'est un JSON ;)
 //https://developer.mozilla.org/fr/docs/Learn/JavaScript/Objects/JSON
